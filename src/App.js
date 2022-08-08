@@ -1,20 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import Button from "./component/Button";
-import QuoteAuthor from "./component/QuoteAuthor";
-import QuoteText from "./component/QuoteText";
-import Tweet from "./component/Tweet";
-import quotes from "./quotes.json";
+import QuoteFooter from "./component/footer/QuoteFooter";
+import QuoteRandom from "./component/quoteRandom/QuoteRandom";
 
 function App() {
-  const [quote, setQuote] = useState({});
-
   return (
-    <div className="App" id="quote-box">
-      <Button quotes={quotes} setQuote={setQuote} />
-      <QuoteText text={quote.quote} />
-      <QuoteAuthor author={quote.author} />
-      <Tweet text={quote.quote} author={quote.author} />
+    <div className="App">
+      <QuoteRandom />
+      <QuoteFooter />
     </div>
   );
 }

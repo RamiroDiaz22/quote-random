@@ -1,0 +1,18 @@
+.quote-footer {
+  padding: 10px;
+}
+
+.footer-text {
+  color: #edeaea;
+}
+
+.footer-text a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s ease;
+}
+
+.footer-text a:hover {
+  /* color: #d7d3d3; */
+  border-bottom: 1px solid #d7d3d3;
+}

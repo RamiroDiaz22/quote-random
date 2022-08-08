@@ -1,4 +1,5 @@
 import React from "react";
+import "./Button.css";
 
 function Button({ quotes, setQuote }) {
   setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
@@ -10,7 +11,7 @@ function Button({ quotes, setQuote }) {
   }
 
   return (
-    <div id="new-quote">
+    <div className="new-quote" id="new-quote">
       <button onClick={handleClick}>Next Quote</button>
     </div>
   );

@@ -1,0 +1,9 @@
+.quote-text {
+  color: rgb(189, 187, 153);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.quote-text::before {
+  content: '"';
+}

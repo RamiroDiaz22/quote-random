@@ -1,0 +1,26 @@
+.quote-tweet a {
+  text-decoration: none;
+}
+
+.quote-tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(189, 187, 153);
+  width: 3rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.quote-tweet a {
+  color: #d7d3d3;
+}
+
+.quote-tweet:hover {
+  background-color: #d7d3d3;
+  box-shadow: 1px 1px 1px rgb(189, 187, 153);
+}
+
+.quote-tweet:hover a {
+  color: rgb(189, 187, 153);
+}

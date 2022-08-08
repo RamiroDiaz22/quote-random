@@ -1,0 +1,11 @@
+.quote {
+  border-radius: 15px;
+  height: 15rem;
+  display: flex;
+  width: 35rem;
+  background: #d7d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}

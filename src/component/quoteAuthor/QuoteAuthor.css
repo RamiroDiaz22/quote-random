@@ -1,0 +1,6 @@
+.quote-author {
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(189, 187, 153);
+  font-size: 1.2rem;
+}

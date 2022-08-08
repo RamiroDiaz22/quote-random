@@ -1,10 +1,11 @@
 import React from "react";
+import "./QuoteText.css";
 
 function QuoteText({ text }) {
   console.log(text);
   return (
-    <div id="quote-text">
-      <span id="text">" {text}</span>
+    <div className="quote-text" id="quote-text">
+      <span id="text">{text}</span>
     </div>
   );
 }
