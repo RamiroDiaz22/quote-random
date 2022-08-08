@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Button from "./component/Button";
+import QuoteAuthor from "./component/QuoteAuthor";
+import QuoteText from "./component/QuoteText";
+import Tweet from "./component/Tweet";
+import quotes from "./quotes.json";
 
 function App() {
+  const [quote, setQuote] = useState({});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="quote-box">
+      <Button quotes={quotes} setQuote={setQuote} />
+      <QuoteText text={quote.quote} />
+      <QuoteAuthor author={quote.author} />
+      <Tweet text={quote.quote} author={quote.author} />
     </div>
   );
 }
